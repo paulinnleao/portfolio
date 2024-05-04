@@ -6,19 +6,13 @@ import {
     } from '@chakra-ui/react';
 
 import './App.css';
-import HeaderIng from "./components/header/HeaderIng";
-import HomePageIng from "./components/HomePage/HomePageIng";
-import AboutMeIng from "./components/aboutMe/AboutMeIng";
-import ExperiencesIng from "./components/experiences/ExperiencesIng";
-import SkillsIng from "./components/skills/SkillsIng";
+import Header from "./components/header/Header";
+import HomePage from "./components/HomePage/HomePage";
+import AboutMe from "./components/aboutMe/AboutMe";
+import Experiences from "./components/experiences/Experiences";
+import Skills from "./components/skills/Skills";
+import Contact from "./components/contact/Contact";
 import FloatButton from "./components/FloatButton";
-import ContactIng from "./components/contact/ContactIng";
-import HeaderPtBr from "./components/header/HeaderPtBr";
-import HomePagePtBr from "./components/HomePage/HomePagePtBr";
-import AboutMePtBr from "./components/aboutMe/AboutMePtBr";
-import ExperiencesPtBr from "./components/experiences/ExperiencesPtBr";
-import SkillsPtBr from "./components/skills/SkillsPtBr";
-import ContactPtBr from "./components/contact/ContactPtBr";
 
   const { Button } = chakraTheme.components
 
@@ -32,28 +26,13 @@ function App() {
   const [language, setLanguage] = useState(true);
 
   return <ChakraBaseProvider theme={theme}>
-            {
-              // English
-              language && <>
-                <HeaderIng setLanguage={setLanguage}/>
-                <HomePageIng />
-                <AboutMeIng />
-                <ExperiencesIng />
-                <SkillsIng />
-                <ContactIng />
-              </>
-            }
-            {
-              // Português
-              !language && <>
-                <HeaderPtBr setLanguage={setLanguage}/>
-                <HomePagePtBr />
-                <AboutMePtBr />
-                <ExperiencesPtBr />
-                <SkillsPtBr />
-                <ContactPtBr />
-              </>
-            }
+    
+            <Header setLanguage={setLanguage} language={language}/>
+            <HomePage language={language}/>
+            <AboutMe language={language} />
+            <Experiences language={language} />
+            <Skills language={language} />
+            <Contact language={language} />
             <FloatButton />
          </ChakraBaseProvider>
 }

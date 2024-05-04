@@ -3,7 +3,7 @@ import { US, BR } from 'country-flag-icons/react/3x2'
 
 import './Header.css';
 
-const HeaderPtBr = ({setLanguage}:any) => {
+const Header = ({setLanguage, language}:any) => {
   return <Box     bgColor={"#173053"}        style={{
                 position: 'sticky',
                 top: '0',
@@ -22,7 +22,7 @@ const HeaderPtBr = ({setLanguage}:any) => {
                     fontSize:'55px',
                     fontFamily: "'Aldrich', sans-serif",
                     color: '#fff',
-                }} >PH</a> <a style={{
+                }} href="#">PH</a> <a href="#" style={{
                     color:'#FAFF00',
                     fontSize: '55px'
                 }} >Leão</a>
@@ -43,12 +43,12 @@ const HeaderPtBr = ({setLanguage}:any) => {
             >
                 <a style={{
                     color: '#fff'
-                }} href="#sobreMim">Sobre mim</a>
-                <a href="#experiencias">Experiências</a>
-                <a href="#habilidades">Habilidades</a>
-                <a href="#contato">Contato</a>
+                }} href="#aboutMe">{language ? 'About me' : 'Sobre mim'}</a>
+                <a href="#experiences">{language ? 'Experiences' : 'Experiências'}</a>
+                <a href="#skills">{language ? 'Skills' : 'Habilidades'}</a>
+                <a href="#contact">{language ? 'Contact' : 'Contato'}</a>
             </Box>
   </Box>
 }
 
-export default HeaderPtBr;
+export default Header;

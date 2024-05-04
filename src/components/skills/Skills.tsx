@@ -2,7 +2,7 @@ import { Box, Image } from '@chakra-ui/react'
 
 import ImagesSkills from './imagesSkills/ImageSkills.json'
 
-const SkillsIng = () => {
+const SkillsIng = ({language}:any) => {
 
   return <Box id='skills' p={'0 4rem'} bgColor={"#173053"} >
                 <p style={{
@@ -10,7 +10,7 @@ const SkillsIng = () => {
                     textAlign: 'center',
                     fontSize: '50px',
                     marginBottom: '20px',
-                }}>Skills</p>
+                }}>{language ? 'Skills' : 'Habilidades'}</p>
             <Box style={{
             display: 'flex',
             alignItems: 'center',

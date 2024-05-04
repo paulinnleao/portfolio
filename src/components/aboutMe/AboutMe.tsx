@@ -4,8 +4,8 @@ import Texts from '../util/Texts.json'
 import '../util/FontGlobal.css'
 
 
-const AboutMePtBr = () => {
-  return <><Box id='sobreMim' p={'100px 4rem'} bgColor={"#173053"}>
+const AboutMe = ({language}:any) => {
+  return <><Box id='aboutMe' p={'100px 4rem'} bgColor={"#173053"}>
             <Box style={{
                 display: 'flex'
                 }}
@@ -16,18 +16,18 @@ const AboutMePtBr = () => {
                     textAlign: 'center',
                     fontSize: '50px',
                     marginBottom: '20px',
-                }}>Sobre mim</p>
-                <p>{Texts.sobreMim.primeiroP}</p>
+                }}>{language ? 'About me' : 'Sobre mim'}</p>
+                <p>{language ? Texts.aboutMe.fistP : Texts.sobreMim.primeiroP}</p>
                 <p style={
                     {
                         textAlign: 'justify',
                         textJustify: 'inter-word'
                     }
-                }>{Texts.sobreMim.segundoP}</p>
+                }>{language ? Texts.aboutMe.secondP : Texts.sobreMim.segundoP}</p>
             </Box>
             <Image style={{
                 boxShadow: '25px 25px 25px black'
-            }} boxSize={500} src='src/components/util/MySelf.png' />
+            }} boxSize={500} src='./src/components/util/MySelf.png' />
             </Box>
             
   </Box>
@@ -35,4 +35,4 @@ const AboutMePtBr = () => {
   </>
 }
 
-export default AboutMePtBr;
+export default AboutMe;

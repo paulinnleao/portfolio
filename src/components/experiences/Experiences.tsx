@@ -1,8 +1,8 @@
 import { Box, Image } from '@chakra-ui/react'
 import Texts from '../util/Texts.json'
 
-const ExperiencesPtBr = () => {
-  return <Box id='experiencias' p={'100px 4rem'} bgColor={"#173053"} style={{
+const Experiences = ({language} : any) => {
+  return <Box id='experiences' p={'100px 4rem'} bgColor={"#173053"} style={{
                 display: 'flex',
                 alignItems: 'center',
                 gap: '50px'
@@ -17,15 +17,15 @@ const ExperiencesPtBr = () => {
                     textAlign: 'center',
                     fontSize: '50px',
                     marginBottom: '20px',
-                }}>Experiências</p>
+                }}>{language ? 'Experiences' : 'Experiência'}</p>
                 <p style={
                     {
                         textAlign: 'justify',
                         textJustify: 'inter-word'
                     }
-                } >{Texts.experiencias}</p>
+                } >{language ? Texts.experiences : Texts.experiencias}</p>
             </Box>
     </Box>
 }
 
-export default ExperiencesPtBr;
+export default Experiences;
