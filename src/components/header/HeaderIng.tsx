@@ -1,5 +1,4 @@
 import { Box, IconButton} from '@chakra-ui/react'
-import React from 'react'
 import { US, BR } from 'country-flag-icons/react/3x2'
 
 import './Header.css';

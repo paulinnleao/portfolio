@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
     ChakraBaseProvider,
     extendBaseTheme,
     theme as chakraTheme,
-    Image,
     } from '@chakra-ui/react';
 
 import './App.css';

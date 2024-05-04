@@ -1,5 +1,4 @@
 import { Box, Image } from '@chakra-ui/react'
-import React from 'react'
 
 const ContactPtBr = () => {
   return <Box id='contato' p={'0 4rem'} bgColor={"#173053"} >

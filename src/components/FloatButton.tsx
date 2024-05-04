@@ -1,5 +1,4 @@
-import { Avatar, Box, Image } from '@chakra-ui/react'
-import React from 'react'
+import { Avatar, Box } from '@chakra-ui/react'
 import styled from 'styled-components';
 
 const FloatButton = () => {
