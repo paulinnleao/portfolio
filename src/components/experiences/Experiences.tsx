@@ -10,7 +10,7 @@ const Experiences = ({language} : any) => {
                     
             <Image style={{
                 boxShadow: '-25px 25px 25px black'
-            }} marginTop={100} boxSize={300} src='src/components/util/cat-work-laptop.gif' />
+            }} marginTop={100} boxSize={300} src='./src/components/util/cat-work-laptop.gif' />
             <Box>
                 <p style={{
                     color: '#FAFF00',

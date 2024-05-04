@@ -31,7 +31,7 @@ const AboutMe = ({language}:any) => {
             </Box>
             
   </Box>
-  <Image bgColor={"#173053"} w={'100%'} src='src/components/util/Footer-trees.png'/>
+  <Image bgColor={"#173053"} w={'100%'} src='./src/components/util/Footer-trees.png'/>
   </>
 }
 
