@@ -1,0 +1,15 @@
+{
+    "skill" : [
+        "src/components/skills/imagesSkills/javascript.png",
+        "src/components/skills/imagesSkills/react.png",
+        "src/components/skills/imagesSkills/nodeJS.png",
+        "src/components/skills/imagesSkills/typescript.png",
+        "src/components/skills/imagesSkills/java.png",
+        "src/components/skills/imagesSkills/docker.png",
+        "src/components/skills/imagesSkills/c++.png",
+        "src/components/skills/imagesSkills/sql.png",
+        "src/components/skills/imagesSkills/postgresql.png",
+        "src/components/skills/imagesSkills/git.png",
+        "src/components/skills/imagesSkills/python.png"
+    ]
+}

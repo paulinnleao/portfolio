@@ -1,0 +1,14 @@
+{
+    "aboutMe": {
+        "fistP" : "'I'm a computer engineering student at PUC.",
+        "secondP": "I have almost 2 years of experience working with core technologies such as JAVASCRIPT, HTML5, CSS3 with REACT for the front-end and JAVA with Rest Full architecture for the back-end. I like playing, studying and discovering more about technology. Sometimes I develop personal projects to practice my learning.'"
+    },
+    "experiences": " I have been working as an intern for almost 2 years. But the time I worked, I really enjoyed it. I practically programmed internal pages and endpoints for the company where I worked. In this company I worked with JAVA implementing endpoints following the Rest level rules. On the front-end I worked with javascript and typescript in a library like react semantic ui or chakra ui. For the database, we use SQL Server.",
+
+    
+    "sobreMim":{
+        "primeiroP": "Sou estudante de engenharia da computação na PUC.",
+        "segundoP": "Tenho quase 2 anos de experiência trabalhando com tecnologias core como JAVASCRIPT, HTML5, CSS3 com REACT para front-end e JAVA com arquitetura Rest Full para back-end. Gosto de jogar, estudar e descobrir mais sobre tecnologia. As vezes desenvolvo projetos pessoais para praticar meu aprendizado."
+    },
+    "experiencias": " Trabalho como estagiário há quase 2 anos. Mas o tempo que trabalhei, gostei e aproveitei bastante. Praticamente programei páginas internas e endpoints para a empresa onde trabalhei. Nela usamos JAVA implementando endpoints seguindo as regras de nível Rest para o back-end. No front-end trabalhei com javascript e typescript com bibliotecas como react semantic ui ou chakra ui. Para o banco de dados, usamos SQL Server."
+}
