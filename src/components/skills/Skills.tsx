@@ -6,6 +6,7 @@ const SkillsIng = ({language}:any) => {
 
   return <Box 
             id='skills'
+            marginTop={{base:'100px'}}
             padding={{base: '0 1rem', md:'0 4rem'}} >
                 <p style={{
                     color: '#FAFF00',

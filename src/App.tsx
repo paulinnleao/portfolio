@@ -21,13 +21,20 @@ import FloatButton from "./components/FloatButton";
     components: {
       Button,
     },
+    breakpoints: {
+      base: '0px',
+      md: '768',
+      lg: '1366'
+    }
   })
 function App() {
 
   const [language, setLanguage] = useState(true);
 
   return <ChakraBaseProvider theme={theme}>
-            <Box bgColor={"#173053"}>
+            <Box 
+              bgColor={"#173053"}
+              m={'center'}>
               <Header setLanguage={setLanguage} language={language}/>
               <HomePage language={language}/>
               <AboutMe language={language} />

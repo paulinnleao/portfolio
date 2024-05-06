@@ -9,14 +9,15 @@ const Experiences = ({language} : any) => {
             padding={{base: '0 1rem', md:'0 4rem'}}
             alignItems={'center'}            
             gap={'50px'}
-            display={{base: 'column', md: 'flex'}}
+            display={{base: 'column', lg: 'flex'}}
+            marginTop={{base:'100px'}}
             >
                     
             <Image 
+                margin={'auto'}
+                display={{base: 'none', lg: 'block'}}
                 boxShadow={'-25px 25px 25px black'}
-                marginTop={100}
                 boxSize={{base: 350, md: 500}}
-                marginBottom={{base: 10, md: 0}}
                 src={Cat} />
             <Box>
                 <p style={{
@@ -32,6 +33,13 @@ const Experiences = ({language} : any) => {
                     }
                 } >{language ? Texts.experiences : Texts.experiencias}</p>
             </Box>
+                    
+                    <Image 
+                        margin={'auto'}
+                        display={{base:'block',lg: 'none'}}
+                        boxShadow={'-25px 25px 25px black'}
+                        boxSize={{base: 350, md: 500}}
+                        src={Cat} />
     </Flex>
 }
 

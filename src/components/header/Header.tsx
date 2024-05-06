@@ -34,7 +34,7 @@ const Header = ({setLanguage, language}:any) => {
                 }} aria-label='US' onClick={()=>setLanguage(true)} w={8} h={8} as={US} bgColor={'rgba(0,0,0,0)'}  />
                 
             </Flex>
-            <Flex gap={'50px'} color={"#FAFF00"} display={{base: 'none', md: 'flex'}} >
+            <Flex gap={'50px'} color={"#FAFF00"} display={{base: 'none', lg: 'flex'}} >
                 <a style={{
                     color: '#fff'
                 }} href="#aboutMe">{language ? 'About me' : 'Sobre mim'}</a>
@@ -42,13 +42,15 @@ const Header = ({setLanguage, language}:any) => {
                 <a href="#skills">{language ? 'Skills' : 'Habilidades'}</a>
                 <a href="#contact">{language ? 'Contact' : 'Contato'}</a>
             </Flex>
-            <Menu>
+            <Menu
+            >
                 <MenuButton as={IconButton}
                             aria-label='Options'
                             icon={<HamburgerIcon />}
                             variant='outline' 
                             bgColor={"white"}
                             marginLeft={'10px'}
+                            display={{lg:'none'}}
                             />
                             <MenuList>
                                 <MenuItem color={'white'} bgColor={"#173053"} padding={'10px'} >

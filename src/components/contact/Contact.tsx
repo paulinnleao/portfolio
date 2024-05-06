@@ -6,7 +6,9 @@ import ZapZap from './zapzap.png'
 import Mail from './mail.png'
 
 const ContactIng = ({language}:any) => {
-  return <Box id='contact' p={'0 4rem'} >
+  return <Box id='contact'
+              marginTop={{base:'100px'}}
+              p={'0 4rem'} >
             <p style={{
                 color: '#FAFF00',
                 textAlign: 'center',
