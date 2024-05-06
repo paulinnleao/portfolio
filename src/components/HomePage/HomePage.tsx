@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Flex } from '@chakra-ui/react'
 import { ArrowUpDownIcon, CloseIcon, MinusIcon, TriangleDownIcon} from '@chakra-ui/icons'
 
 import '../util/FontGlobal.css'
@@ -7,17 +7,13 @@ const HomePage = ({language}:any) => {
   return <Box 
           w={'100%'}
           h={'100%'}
-          bg='#173053'
-          padding={'0 4rem'}
+          padding={{base: '0 1rem', md:'0 4rem'}}
           >
         <Box>
-          <Box
-            style={{
-              backgroundColor: '#000',
-              display: 'flex',
-              justifyContent: 'space-between',
-              padding: '1px 10px'
-            }}
+          <Flex 
+            bgColor={'#000'}
+            justifyContent={'space-between'}
+            padding={'1px 10px'}
           >
             <p>Hello World!</p>
             <Box>
@@ -33,7 +29,7 @@ const HomePage = ({language}:any) => {
                 backgroundColor : 'red',
               }}  color={'#fff'}/>
             </Box>
-          </Box>
+          </Flex>
         </Box>
         <Box
           m={'auto'}
@@ -81,7 +77,7 @@ const HomePage = ({language}:any) => {
             justifyContent: 'center',
           }}
           >
-            <TriangleDownIcon w={100} h={100} color={'#FDFF95'}/>
+            <a href='#aboutMe'><TriangleDownIcon w={100} h={100} color={'#FDFF95'}/></a>
         </Box>
     </Box>
 }

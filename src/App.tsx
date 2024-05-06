@@ -3,6 +3,7 @@ import {
     ChakraBaseProvider,
     extendBaseTheme,
     theme as chakraTheme,
+    Box,
     } from '@chakra-ui/react';
 
 import './App.css';
@@ -26,14 +27,15 @@ function App() {
   const [language, setLanguage] = useState(true);
 
   return <ChakraBaseProvider theme={theme}>
-    
-            <Header setLanguage={setLanguage} language={language}/>
-            <HomePage language={language}/>
-            <AboutMe language={language} />
-            <Experiences language={language} />
-            <Skills language={language} />
-            <Contact language={language} />
-            <FloatButton />
+            <Box bgColor={"#173053"}>
+              <Header setLanguage={setLanguage} language={language}/>
+              <HomePage language={language}/>
+              <AboutMe language={language} />
+              <Experiences language={language} />
+              <Skills language={language} />
+              <Contact language={language} />
+              <FloatButton />
+            </Box>
          </ChakraBaseProvider>
 }
 
