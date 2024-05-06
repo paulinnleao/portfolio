@@ -8,8 +8,8 @@ const Experiences = ({language} : any) => {
             id='experiences'
             padding={{base: '0 1rem', md:'0 4rem'}}
             alignItems={'center'}            
-            gap={'50px'}
-            display={{base: 'column', lg: 'flex'}}
+            gap={'50px'} 
+            flexDirection={{base: 'column', lg: 'row'}}
             marginTop={{base:'100px'}}
             >
                     

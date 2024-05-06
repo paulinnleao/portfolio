@@ -11,7 +11,7 @@ const AboutMe = ({language}:any) => {
                 id='aboutMe'
                 marginTop={{base:'100px'}}
                 padding={{base: '0 1rem', md:'0 4rem'}} >
-            <Flex gap={'50px'} display={{base: 'column', lg: 'flex'}}>
+            <Flex gap={'50px'} flexDirection={{base: 'column', lg: 'row'}}>
                 <Box>
                     <p style={{
                         color: '#FAFF00',
