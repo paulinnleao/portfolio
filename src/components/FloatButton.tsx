@@ -1,11 +1,11 @@
 import { Avatar, Box } from '@chakra-ui/react'
 import styled from 'styled-components';
 
-const avatar = './util/lion-icon.png'
+import Lion from './util/lion-icon.png'
 
 const FloatButton = () => {
   return <BoxFloat>
-            <Avatar src={avatar} />
+            <Avatar src={Lion} />
         </BoxFloat>
 }
 

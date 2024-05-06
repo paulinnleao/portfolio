@@ -1,6 +1,6 @@
 import { Box, Image } from '@chakra-ui/react'
 
-import ImagesSkills from './imagesSkills/ImageSkills.json'
+import { ImageSkills } from './imagesSkills/ImageSkills';
 
 const SkillsIng = ({language}:any) => {
 
@@ -19,7 +19,7 @@ const SkillsIng = ({language}:any) => {
             justifyContent: 'space-between'
             }}>
             {
-                ImagesSkills.skill.map((value, key)=> <Image
+                ImageSkills.map((value, key)=> <Image
                                                  src={value} 
                                                  key={key}
                                                  boxSize={106}

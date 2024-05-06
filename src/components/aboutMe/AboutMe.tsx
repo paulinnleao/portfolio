@@ -3,6 +3,8 @@ import Texts from '../util/Texts.json'
 
 import '../util/FontGlobal.css'
 
+import MySelf from '../util/MySelf.png'
+import FooterTrees from '../util/Footer-trees.png'
 
 const AboutMe = ({language}:any) => {
   return <><Box id='aboutMe' p={'100px 4rem'} bgColor={"#173053"}>
@@ -27,11 +29,11 @@ const AboutMe = ({language}:any) => {
             </Box>
             <Image style={{
                 boxShadow: '25px 25px 25px black'
-            }} boxSize={500} src='./src/components/util/MySelf.png' />
+            }} boxSize={500} src={MySelf} />
             </Box>
             
   </Box>
-  <Image bgColor={"#173053"} w={'100%'} src='./src/components/util/Footer-trees.png'/>
+  <Image bgColor={"#173053"} w={'100%'} src={FooterTrees}/>
   </>
 }
 
