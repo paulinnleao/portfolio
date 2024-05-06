@@ -1,6 +1,8 @@
 import { Box, Image } from '@chakra-ui/react'
 import Texts from '../util/Texts.json'
 
+import Cat from '../util/cat-work-laptop.gif'
+
 const Experiences = ({language} : any) => {
   return <Box id='experiences' p={'100px 4rem'} bgColor={"#173053"} style={{
                 display: 'flex',
@@ -10,7 +12,7 @@ const Experiences = ({language} : any) => {
                     
             <Image style={{
                 boxShadow: '-25px 25px 25px black'
-            }} marginTop={100} boxSize={300} src='./src/components/util/cat-work-laptop.gif' />
+            }} marginTop={100} boxSize={300} src={Cat} />
             <Box>
                 <p style={{
                     color: '#FAFF00',
