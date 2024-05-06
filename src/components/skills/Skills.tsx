@@ -25,7 +25,10 @@ const SkillsIng = ({language}:any) => {
                                                  src={value} 
                                                  key={key}
                                                  boxSize={106}
+                                                 opacity={'0.8'}
                                                  _hover={{
+                                                    opacity:'1',
+                                                    boxShadow: '2px 2px 2px 2px black'
                                                  }}
                                                  />)
             }
