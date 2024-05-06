@@ -27,10 +27,12 @@ const Header = ({setLanguage, language}:any) => {
                     fontSize: '55px'
                 }} >Leão</a>
                 <IconButton _hover={{
-                    backgroundColor:'rgba(0,0,0,0)'
+                    backgroundColor:'rgba(0,0,0,0)',
+                    cursor: 'pointer'
                 }} aria-label='Fodase' onClick={()=>setLanguage(false)} w={8} h={8} as={BR} bgColor={'rgba(0,0,0,0)'} />
                 <IconButton  _hover={{
-                    backgroundColor:'rgba(0,0,0,0)'
+                    backgroundColor:'rgba(0,0,0,0)',
+                    cursor: 'pointer'
                 }} aria-label='Fodase' onClick={()=>setLanguage(true)} w={8} h={8} as={US} bgColor={'rgba(0,0,0,0)'}  />
                 
             </Box>

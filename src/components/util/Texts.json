@@ -1,6 +1,6 @@
 {
     "aboutMe": {
-        "fistP" : "'I'm a computer engineering student at PUC.",
+        "fistP" : "I'm a computer engineering student at PUC.",
         "secondP": "I have almost 2 years of experience working with core technologies such as JAVASCRIPT, HTML5, CSS3 with REACT for the front-end and JAVA with Rest Full architecture for the back-end. I like playing, studying and discovering more about technology. Sometimes I develop personal projects to practice my learning.'"
     },
     "experiences": " I have been working as an intern for almost 2 years. But the time I worked, I really enjoyed it. I practically programmed internal pages and endpoints for the company where I worked. In this company I worked with JAVA implementing endpoints following the Rest level rules. On the front-end I worked with javascript and typescript in a library like react semantic ui or chakra ui. For the database, we use SQL Server.",
