@@ -12,6 +12,7 @@ const Header = ({setLanguage, language}:any) => {
             justifyContent={'space-between'} 
             padding={{base: '0 1rem', md:'0 4rem'}}
             alignItems={'center'}
+            zIndex={"99"}
             >
             <Flex alignItems={'base-line'} gap={'10px'} >
                 <Link 
